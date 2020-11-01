@@ -1,0 +1,174 @@
+body {
+  height: 100%; width: 100%; background-color: #030405;
+}
+
+#light {
+  background-color: #fdfdfc;
+  height: 7px;
+  width: 0;
+  transform: rotate(340deg);
+  animation: light 10s linear infinite;
+  position: relative;
+}
+
+#tri {
+  background-color: #030405;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 250px;
+  width: 0; 
+  height: 25%;
+  position: relative;
+  animation: shine 10s linear infinite;
+
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+}
+
+
+.rainbow {
+  height: 8px;
+  width: 0;
+  transform: rotate(20deg); 
+  position: relative;
+}
+
+#red {
+  background-color: #e2534f;
+  animation: red 10s linear infinite;
+}
+
+#orange {
+  background-color: #e78550;
+  animation: rainbow 10s linear infinite;
+}
+
+#yellow {
+  background-color: #f7eb6e;
+  animation: rainbow 10s linear infinite;
+}
+
+#green {
+  background-color: #6ab56d;
+  animation: rainbow 10s linear infinite;
+}
+
+#blue {
+  background-color: #5cb1cb;
+  animation: rainbow 10s linear infinite;
+}
+
+#violet {
+  background-color: #87789f;
+  animation: rainbow 10s linear infinite;
+}
+
+
+@keyframes red {
+  20% {
+    width: 0px;
+    margin-left: 510px;
+    margin-top: -70px;
+  }
+  30% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: -18px;
+  }
+  70% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: -18px;
+  }
+  80% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: -18px;
+  }
+  100% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: -18px;
+  }
+}
+
+@keyframes rainbow {
+  20% {
+    width: 0px;
+    margin-left: 510px;
+    margin-top: 0px;
+  }
+  30% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: 0px;
+  }
+  80% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: 0px;
+  }
+  100% {
+    width: 450px;
+    margin-left: 510px;
+    margin-top: 0px;
+  }
+}
+
+
+
+@keyframes light {
+  0% {
+    width: 0px;
+    margin-top: -40px;
+  }
+  20% {
+    width: 380px;
+    margin-left: 0px;
+    margin-top: -110px;
+  }
+  50% {
+    width: 380px;
+    margin-left: 0px;
+    margin-top: -110px;
+  }
+  80% {
+    width: 380px;
+    margin-left: 0px;
+    margin-top: -110px;
+  }
+  100% {
+    width: 380px;
+    margin-left: 0px;
+    margin-top: -110px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    border-bottom: 300px solid #030405;
+  }
+  20% {
+    border-bottom: 300px solid #e2534f;
+  }
+  40% {
+    border-bottom: 300px solid #f7eb6e;
+  }
+  60% {
+    border-bottom: 300px solid #6ab56d;
+  }
+  80% {
+    border-bottom: 300px solid #93a6ae;
+  }
+  100% {
+    border-bottom: 300px solid #87789f;
+  }
+}
+
+h1 {
+  font-family: serif;
+  font-size: 40px;
+  font-style: normal;
+  color: #fdfdfc;
+  text-align: center;
+}
